@@ -12,7 +12,7 @@ public abstract class State
         yield return null;
     }
 
-    public virtual IEnumerator Reload(GunController gunController)
+    public virtual IEnumerator Reload(GunController gunController, bool oneShotLeft)
     {
         yield return null;
     }

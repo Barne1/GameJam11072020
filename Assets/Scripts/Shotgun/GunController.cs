@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class GunController : StateMachine
 {
+    public PlayerStats playerStats;
     public KeyCode ReloadKey = KeyCode.R;
-    private void Start()
+    private void Awake()
     {
         SetState(new FullyLoaded());
     }
@@ -44,6 +45,15 @@ public class GunController : StateMachine
 
     public void Reload()
     {
-        StartCoroutine(currentState.Reload(this));
+        if (playerStats.ammo > 0)
+        {
+            StartCoroutine(currentState.Reload(this, playerStats.ammo < 2));
+        }
+    }
+
+    public void RemoveAmmo(int ammoToRemove)
+    {
+        playerStats.ammo -= ammoToRemove;
+        Debug.Log($"Removing {ammoToRemove}, ammo left: {playerStats.ammo}");
     }
 }

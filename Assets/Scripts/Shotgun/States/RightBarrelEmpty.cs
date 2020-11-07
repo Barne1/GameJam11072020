@@ -16,8 +16,9 @@ public class RightBarrelEmpty : State
         yield return null;
     }
 
-    public override IEnumerator Reload(GunController gunController)
+    public override IEnumerator Reload(GunController gunController, bool oneShotLeft)
     {
+        gunController.RemoveAmmo(1);
         //reload left barrel anim
         gunController.SetState(new FullyLoaded());
         yield return null;
