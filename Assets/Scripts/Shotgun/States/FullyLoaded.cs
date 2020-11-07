@@ -15,8 +15,7 @@ public class FullyLoaded : State
         gunController.Shoot();
         yield return null;
         //play gun animation
-        gunController.SetState(new LeftBarrelEmpty());
+        gunController.SetState(new RightBarrelEmpty());
     }
-    
     //no reload
 }
