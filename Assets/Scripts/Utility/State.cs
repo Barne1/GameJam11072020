@@ -2,14 +2,12 @@
 
 public abstract class State
 {
-    public virtual IEnumerator MouseOne(GunController gunController)
+    public virtual void MouseOne(GunController gunController)
     {
-        yield return null;
     }
 
-    public virtual IEnumerator MouseTwo(GunController gunController)
+    public virtual void MouseTwo(GunController gunController)
     {
-        yield return null;
     }
 
     public virtual IEnumerator Reload(GunController gunController, bool oneShotLeft)

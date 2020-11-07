@@ -20,12 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34ef84b1-4d10-4067-a106-f6b100d2f629" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam11072020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam11072020/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam11072020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam11072020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HugoDebug/HugoDebug.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HugoDebug/HugoDebug.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerStuff/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerStuff/PlayerStats.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shotgun/GunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shotgun/GunController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/FullyEmpty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/FullyEmpty.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/FullyLoaded.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/FullyLoaded.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/LeftBarrelEmpty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/LeftBarrelEmpty.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/RightBarrelEmpty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/RightBarrelEmpty.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleScenePostProcessingSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleScenePostProcessingSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,19 +42,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shotgun/Stats/S_GunStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerStuff/ScriptablePlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStuff/ScriptablePlayerStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerStuff/PlayerStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/GunController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/LeftBarrelEmpty.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/RightBarrelEmpty.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/LeftBarrelEmpty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/FullyEmpty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/States/FullyLoaded.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/Stats/S_GunStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shotgun/GunController.cs" />
       </list>
     </option>
   </component>
@@ -91,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604761665771</updated>
-      <workItem from="1604761671034" duration="3900000" />
+      <workItem from="1604761671034" duration="21663000" />
     </task>
     <servers />
   </component>

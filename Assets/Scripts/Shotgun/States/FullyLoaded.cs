@@ -2,18 +2,18 @@
 
 public class FullyLoaded : State
 {
-    public override IEnumerator MouseOne(GunController gunController)
+    public override void MouseOne(GunController gunController)
     {
+        gunController.OnBarrelChanged.Invoke(GunController.Barrel.LEFT, false);
         gunController.Shoot();
-        yield return null;
         //play gun animation
         gunController.SetState(new LeftBarrelEmpty());
     }
     
-    public override IEnumerator MouseTwo(GunController gunController)
+    public override void MouseTwo(GunController gunController)
     {
+        gunController.OnBarrelChanged.Invoke(GunController.Barrel.RIGHT, false);
         gunController.Shoot();
-        yield return null;
         //play gun animation
         gunController.SetState(new RightBarrelEmpty());
     }

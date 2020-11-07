@@ -2,16 +2,14 @@
 
 public class FullyEmpty : State
 {
-    public override IEnumerator MouseOne(GunController gunController)
+    public override void MouseOne(GunController gunController)
     {
         //play click sound
-        yield return null;
     }
     
-    public override IEnumerator MouseTwo(GunController gunController)
+    public override void MouseTwo(GunController gunController)
     {
         //play click sound
-        yield return null;
     }
 
     public override IEnumerator Reload(GunController gunController, bool oneShotLeft)
@@ -21,11 +19,13 @@ public class FullyEmpty : State
         
         if (oneShotLeft)
         {
+            gunController.OnBarrelChanged.Invoke(GunController.Barrel.LEFT, true);
             //reload left barrel anim
-            gunController.SetState(new LeftBarrelEmpty());
+            gunController.SetState(new RightBarrelEmpty());
         }
         else
         {
+            gunController.OnBarrelChanged.Invoke(GunController.Barrel.BOTH, true);
             //reload both barrels anim
             gunController.SetState(new FullyLoaded());
         }

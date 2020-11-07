@@ -2,22 +2,22 @@
 
 public class LeftBarrelEmpty : State
 {
-    public override IEnumerator MouseOne(GunController gunController)
+    public override void MouseOne(GunController gunController)
     {
         //play click sound
-        yield return null;
     }
 
-    public override IEnumerator MouseTwo(GunController gunController)
+    public override void MouseTwo(GunController gunController)
     {
         gunController.Shoot();
         //play gun animation
-        yield return null;
+        gunController.OnBarrelChanged.Invoke(GunController.Barrel.RIGHT, false);
         gunController.SetState(new FullyEmpty());
     }
 
     public override IEnumerator Reload(GunController gunController, bool oneShotLeft)
     {
+        gunController.OnBarrelChanged.Invoke(GunController.Barrel.LEFT, true);
         gunController.RemoveAmmo(1);
         //reload left barrel anim
         gunController.SetState(new FullyLoaded());
