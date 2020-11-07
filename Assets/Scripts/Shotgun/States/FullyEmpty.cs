@@ -22,12 +22,13 @@ public class FullyEmpty : State
         if (oneShotLeft)
         {
             //reload left barrel anim
+            gunController.SetState(new LeftBarrelEmpty());
         }
         else
         {
             //reload both barrels anim
+            gunController.SetState(new FullyLoaded());
         }
-        gunController.SetState(new FullyLoaded());
         yield return null;
     }
 }

@@ -54,5 +54,6 @@ public class GunController : StateMachine
     public void RemoveAmmo(int ammoToRemove)
     {
         playerStats.ammo -= ammoToRemove;
+        Debug.Log($"Removing {ammoToRemove}, ammo left: {playerStats.ammo}");
     }
 }
