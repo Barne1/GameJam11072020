@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour
 
     private void Start()
     {
-//        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
@@ -22,6 +22,4 @@ public class CameraMovement : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerTransform.Rotate(Vector3.up * mouseX);
     }
-
-    
 }
